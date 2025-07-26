@@ -1,14 +1,3 @@
-/*!
- * Copyright (c) 2024 PLANKA Software GmbH
- * Licensed under the Fair Use License: https://github.com/plankanban/planka/blob/master/LICENSE.md
- */
-
-/**
- * Project.js
- *
- * @description :: A model definition represents a database table/collection.
- * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
- */
 
 const Types = {
   PRIVATE: 'private',
@@ -54,9 +43,6 @@ module.exports = {
   BACKGROUND_GRADIENTS,
 
   attributes: {
-    //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
-    //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
-    //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
 
     name: {
       type: 'string',
@@ -81,17 +67,9 @@ module.exports = {
     },
     isHidden: {
       type: 'boolean',
-      defaultsTo: false, // TODO: implement via normalizeValues?
+      defaultsTo: false,
       columnName: 'is_hidden',
     },
-
-    //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
-    //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
-    //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
-
-    //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
-    //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
-    //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
     ownerProjectManagerId: {
       model: 'ProjectManager',

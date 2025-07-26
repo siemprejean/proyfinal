@@ -1,15 +1,3 @@
-/*!
- * Copyright (c) 2024 PLANKA Software GmbH
- * Licensed under the Fair Use License: https://github.com/plankanban/planka/blob/master/LICENSE.md
- */
-
-/**
- * s3 hook
- *
- * @description :: A hook definition. Extends Sails by adding shadow routes, implicit actions,
- *                 and/or initialization logic.
- * @docs        :: https://sailsjs.com/docs/concepts/extending-sails/hooks
- */
 
 const { URL } = require('url');
 const { S3Client } = require('@aws-sdk/client-s3');

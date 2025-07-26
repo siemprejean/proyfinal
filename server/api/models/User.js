@@ -1,14 +1,3 @@
-/*!
- * Copyright (c) 2024 PLANKA Software GmbH
- * Licensed under the Fair Use License: https://github.com/plankanban/planka/blob/master/LICENSE.md
- */
-
-/**
- * User.js
- *
- * @description :: A model definition represents a database table/collection.
- * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
- */
 
 const Roles = {
   ADMIN: 'admin',
@@ -16,7 +5,6 @@ const Roles = {
   BOARD_USER: 'boardUser',
 };
 
-// TODO: should not be here
 const EditorModes = {
   WYSIWYG: 'wysiwyg',
   MARKUP: 'markup',
@@ -104,9 +92,6 @@ module.exports = {
   OIDC,
 
   attributes: {
-    //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
-    //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
-    //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
 
     email: {
       type: 'string',
@@ -205,14 +190,6 @@ module.exports = {
       type: 'ref',
       columnName: 'password_changed_at',
     },
-
-    //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
-    //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
-    //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
-
-    //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
-    //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
-    //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
     managerProjects: {
       collection: 'Project',

@@ -1,14 +1,3 @@
-/*!
- * Copyright (c) 2024 PLANKA Software GmbH
- * Licensed under the Fair Use License: https://github.com/plankanban/planka/blob/master/LICENSE.md
- */
-
-/**
- * Notification.js
- *
- * @description :: A model definition represents a database table/collection.
- * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
- */
 
 const Types = {
   MOVE_CARD: 'moveCard',
@@ -21,9 +10,6 @@ module.exports = {
   Types,
 
   attributes: {
-    //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
-    //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
-    //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
 
     type: {
       type: 'string',
@@ -40,14 +26,6 @@ module.exports = {
       columnName: 'is_read',
     },
 
-    //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
-    //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
-    //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
-
-    //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
-    //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
-    //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
-
     userId: {
       model: 'User',
       required: true,
@@ -57,7 +35,6 @@ module.exports = {
       model: 'User',
       columnName: 'creator_user_id',
     },
-    // Denormalization
     boardId: {
       model: 'Board',
       required: true,

@@ -1,10 +1,6 @@
 const { expect } = require('chai');
 const { getRemoteAddress } = require('../../utils/remote-address');
 
-/**
- * Fake HTTP request object
- * given to all api controllers.
- */
 const MOCK_REQUEST = {
   ip: '',
   ips: [],

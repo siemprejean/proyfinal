@@ -1,25 +1,8 @@
-/**
- * Route Mappings
- * (sails.config.routes)
- *
- * Your routes tell Sails what to do each time it receives a request.
- *
- * For more information on configuring custom routes, check out:
- * https://sailsjs.com/anatomy/config/routes-js
- */
 
 const path = require('path');
 const serveStatic = require('serve-static');
 const sails = require('sails');
 
-// Remove prefix from urlPath, assuming completely matches a subpath of
-// urlPath. The result preserves query params and fragment if present
-//
-// Examples:
-// '/foo', '/foo/bar'     -> '/bar'
-// '/foo', '/foo'         -> '/'
-// '/foo', '/foo?baz=bux' -> '/?baz=bux'
-// '/foo', '/foobar'      -> '/foobar'
 function removeRoutePrefix(prefix, urlPath) {
   if (urlPath.startsWith(prefix)) {
     const subpath = urlPath.substring(prefix.length);

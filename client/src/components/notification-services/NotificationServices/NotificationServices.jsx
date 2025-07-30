@@ -1,8 +1,3 @@
-/*!
- * Copyright (c) 2024 PLANKA Software GmbH
- * Licensed under the Fair Use License: https://github.com/plankanban/planka/blob/master/LICENSE.md
- */
-
 import React, { useCallback, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -72,15 +67,6 @@ const NotificationServices = React.memo(({ ids, onCreate }) => {
 
   return (
     <>
-      <Message>
-        <Trans i18nKey="common.plankaUsesAppriseToSendNotificationsToOver100PopularServices">
-          {'PLANKA uses '}
-          <a href="https://github.com/caronc/apprise/wiki" target="_blank" rel="noreferrer">
-            <b>Apprise</b>
-          </a>
-          {' to send notifications to over 100 popular services.'}
-        </Trans>
-      </Message>
       {ids.map((id) => (
         <div key={id} className={styles.item}>
           <Item id={id} />

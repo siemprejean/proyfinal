@@ -20,7 +20,6 @@ export default {
 
   translation: {
     common: {
-      aboutPlanka: 'Planka kohta',
       account: 'Konto',
       actions: 'Tegevused',
       activateUser_title: 'Aktiveeri kasutaja',
@@ -230,8 +229,6 @@ export default {
       organization: 'Organisatsioon',
       others: 'Teised',
       phone: 'Telefon',
-      plankaUsesAppriseToSendNotificationsToOver100PopularServices:
-        'PLANKA kasutab <1><0>Apprise</0></1> teavitusteenuse, et teavitada üle 100 populaarset teenust.',
       preferences: 'Eelistused',
       pressPasteShortcutToAddAttachmentFromClipboard:
         "Näpunäide: vajutage Ctrl-V (Cmd-V Mac'il) manuse lisamiseks kleebist.",

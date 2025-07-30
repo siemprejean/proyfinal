@@ -20,7 +20,6 @@ export default {
 
   translation: {
     common: {
-      aboutPlanka: 'PLANKA-ról',
       account: 'Fiók',
       actions: 'Műveletek',
       addAttachment_title: 'Melléklet hozzáadása',

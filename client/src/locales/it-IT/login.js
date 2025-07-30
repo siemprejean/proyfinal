@@ -12,7 +12,6 @@ export default {
       or: 'Oppure',
       pageNotFound_title: 'Pagina non trovata',
       password: 'Password',
-      poweredByPlanka: 'Powered by <1>PLANKA</1>',
       serverConnectionFailed: 'Connesione al server fallita',
       unknownError: 'Errore sconosciuto, prova ancora',
       useSingleSignOn: 'Accedi con SSO',

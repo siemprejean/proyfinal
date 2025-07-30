@@ -20,7 +20,6 @@ export default {
 
   translation: {
     common: {
-      aboutPlanka: 'Despre PLANKA',
       account: 'Cont',
       actions: 'Acțiuni',
       addAttachment_title: 'Adauga atasament',

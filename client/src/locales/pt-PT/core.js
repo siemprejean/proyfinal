@@ -20,7 +20,6 @@ export default {
 
   translation: {
     common: {
-      aboutPlanka: 'Sobre o PLANKA',
       account: 'Conta',
       actions: 'Ações',
       addAttachment_title: 'Anexar Ficheiro',

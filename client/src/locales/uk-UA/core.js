@@ -17,7 +17,6 @@ export default {
 
   translation: {
     common: {
-      aboutPlanka: 'Про PLANKA',
       account: 'Обліковий запис',
       actions: 'Дії',
       activateUser_title: 'Активувати користувача',
@@ -224,8 +223,6 @@ export default {
       organization: 'Організація',
       others: 'Інші',
       phone: 'Телефон',
-      plankaUsesAppriseToSendNotificationsToOver100PopularServices:
-        'PLANKA використовує <1><0>Apprise</0></1> для надсилання сповіщень на понад 100 популярних сервісів.',
       preferences: 'Уподобання',
       pressPasteShortcutToAddAttachmentFromClipboard:
         'Порада: натисніть Ctrl-V (⌘V на Mac), щоб додати вкладення з буфера обміну.',

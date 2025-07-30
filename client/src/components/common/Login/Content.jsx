@@ -1,8 +1,3 @@
-/*!
- * Copyright (c) 2024 PLANKA Software GmbH
- * Licensed under the Fair Use License: https://github.com/plankanban/planka/blob/master/LICENSE.md
- */
-
 import isEmail from 'validator/lib/isEmail';
 import React, { useCallback, useEffect, useMemo } from 'react';
 import classNames from 'classnames';
@@ -247,14 +242,6 @@ const Content = React.memo(() => {
                 />
               )}
             </div>
-            <p className={styles.formFooter}>
-              <Trans i18nKey="common.poweredByPlanka">
-                {'Powered by '}
-                <a href="https://github.com/plankanban/planka" target="_blank" rel="noreferrer">
-                  PLANKA
-                </a>
-              </Trans>
-            </p>
           </div>
         </Grid.Column>
         <Grid.Column

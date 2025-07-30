@@ -1,21 +1,34 @@
 services:
-  planka:
-    image: ghcr.io/plankanban/planka:2.0.0-rc.3
+  planka-server:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    image: planka-dev
+    pull_policy: never
+    command: ["bash", "-c", "npm install && npm run db:init && npm start"]
     restart: on-failure
     volumes:
-      - favicons:/app/public/favicons
-      - user-avatars:/app/public/user-avatars
-      - background-images:/app/public/background-images
-      - attachments:/app/private/attachments
+      - ./server:/app
     ports:
-      - 3000:1337
+      - 1337:1337
     environment:
-      - BASE_URL=http://localhost:3000
-      - DATABASE_URL=${DATABASE_URL}
-      - SECRET_KEY=${SECRET_KEY}
+      - BASE_URL=http://localhost:1337
+      - DATABASE_URL=postgresql://postgres@postgres/planka
+      - SECRET_KEY=notsecretkey
+
     depends_on:
       postgres:
         condition: service_healthy
+
+  planka-client:
+    image: planka-dev
+    pull_policy: never
+    command: ["bash", "-c", "npm install && npx vite --host"]
+    restart: on-failure
+    volumes:
+      - ./client:/app
+    ports:
+      - 3000:3000
 
   postgres:
     image: postgres:16-alpine
@@ -26,14 +39,15 @@ services:
       - POSTGRES_DB=planka
       - POSTGRES_HOST_AUTH_METHOD=trust
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres -d planka"]
-      interval: 10s
+      test:
+        [
+          "CMD-SHELL",
+          "pg_isready -U ${POSTGRES_USER:-postgres} -d ${POSTGRES_DB:-planka} && psql -U ${POSTGRES_USER:-postgres} -d ${POSTGRES_DB:-planka} -c 'SELECT 1'",
+        ]
+      interval: 3s
       timeout: 5s
-      retries: 5
+      retries: 15
+      start_period: 10s
 
 volumes:
-  favicons:
-  user-avatars:
-  background-images:
-  attachments:
   db-data:

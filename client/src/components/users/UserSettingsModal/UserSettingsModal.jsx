@@ -1,8 +1,3 @@
-/*!
- * Copyright (c) 2024 PLANKA Software GmbH
- * Licensed under the Fair Use License: https://github.com/plankanban/planka/blob/master/LICENSE.md
- */
-
 import React, { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
@@ -13,7 +8,6 @@ import { useClosableModal } from '../../../hooks';
 import AccountPane from './AccountPane';
 import PreferencesPane from './PreferencesPane';
 import NotificationsPane from './NotificationsPane';
-import AboutPane from './AboutPane';
 
 const UserSettingsModal = React.memo(() => {
   const dispatch = useDispatch();
@@ -43,12 +37,6 @@ const UserSettingsModal = React.memo(() => {
         context: 'title',
       }),
       render: () => <NotificationsPane />,
-    },
-    {
-      menuItem: t('common.aboutPlanka', {
-        context: 'title',
-      }),
-      render: () => <AboutPane />,
     },
   ];
 

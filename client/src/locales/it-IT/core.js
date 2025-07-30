@@ -20,7 +20,6 @@ export default {
 
   translation: {
     common: {
-      aboutPlanka: 'Informazioni su PLANKA',
       account: 'Account',
       actions: 'Azioni',
       activateUser_title: 'Attiva utente',
@@ -229,8 +228,6 @@ export default {
       organization: 'Organizazzione',
       others: 'Altri',
       phone: 'Telefono',
-      plankaUsesAppriseToSendNotificationsToOver100PopularServices:
-        'PLANKA utilizza <1><0>Apprise</0></1> per inviare notifiche a oltre 100 servizi popolari.',
       preferences: 'Preferenze',
       pressPasteShortcutToAddAttachmentFromClipboard:
         'Consiglio: premi Ctrl-V (Cmd-V on Mac) per aggiungere un allegato dalla clipboard.',

@@ -17,7 +17,6 @@ export default {
 
   translation: {
     common: {
-      aboutPlanka: 'درباره PLANKA',
       account: 'حساب کاربری',
       actions: 'اقدامات',
       addAttachment_title: 'اضافه کردن پیوست',

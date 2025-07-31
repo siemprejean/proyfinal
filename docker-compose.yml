@@ -1,6 +1,7 @@
 services:
   planka:
-    image: ghcr.io/plankanban/planka:2.0.0-rc.3
+      context: .
+    image: kanplan-custom
     restart: on-failure
     volumes:
       - favicons:/app/public/favicons

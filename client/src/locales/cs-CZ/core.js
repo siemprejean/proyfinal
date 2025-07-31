@@ -20,7 +20,6 @@ export default {
 
   translation: {
     common: {
-      aboutPlanka: 'O aplikaci PLANKA',
       account: 'Účet',
       actions: 'Akce',
       activateUser_title: 'Aktivovat uživatele',
@@ -222,8 +221,6 @@ export default {
       organization: 'Společnost',
       others: 'Jiné',
       phone: 'Telefon',
-      plankaUsesAppriseToSendNotificationsToOver100PopularServices:
-        'PLANKA používá <1><0>Apprise</0></1> k zasílání oznámení do více než 100 oblíbených služeb.',
       preferences: 'Volby',
       pressPasteShortcutToAddAttachmentFromClipboard:
         'Tip: stisknutím Ctrl-V (Cmd-V na Macu) přidáte přílohu ze schránky.',

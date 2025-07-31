@@ -20,7 +20,6 @@ export default {
 
   translation: {
     common: {
-      aboutPlanka: 'О проекте PLANKA',
       account: 'Учетная запись',
       actions: 'Действия',
       activateUser_title: 'Активировать пользователя',
@@ -228,8 +227,6 @@ export default {
       organization: 'Организация',
       others: 'Другие',
       phone: 'Телефон',
-      plankaUsesAppriseToSendNotificationsToOver100PopularServices:
-        'PLANKA использует <1><0>Apprise</0></1> для отправки уведомлений в более чем 100 популярных сервисов.',
       preferences: 'Предпочтения',
       pressPasteShortcutToAddAttachmentFromClipboard:
         'Совет: нажмите Ctrl-V (Cmd-V на Mac), чтобы добавить вложение из буфера обмена.',

@@ -1,8 +1,3 @@
-/*!
- * Copyright (c) 2024 PLANKA Software GmbH
- * Licensed under the Fair Use License: https://github.com/plankanban/planka/blob/master/LICENSE.md
- */
-
 import { nanoid } from 'nanoid';
 import { call, put, select } from 'redux-saga/effects';
 import { replace } from '../../../lib/redux-router';
@@ -51,7 +46,6 @@ export function* authenticateWithOidc() {
 }
 
 export function* authenticateWithOidcCallback() {
-  // https://github.com/plankanban/planka/issues/511#issuecomment-1771385639
   const params = new URLSearchParams(window.location.hash.substring(1) || window.location.search);
 
   const state = window.localStorage.getItem('oidc-state');

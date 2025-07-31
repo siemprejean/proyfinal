@@ -12,7 +12,6 @@ export default {
       or: 'Lub',
       pageNotFound_title: 'Strona nie znaleziona',
       password: 'Hasło',
-      poweredByPlanka: 'Powered by <1>PLANKA</1>',
       serverConnectionFailed: 'Błąd połączenia z serwerem',
       unknownError: 'Nieznany błąd, spróbuj ponownie później',
       useSingleSignOn: 'Użyj logowania SSO',

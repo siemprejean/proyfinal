@@ -20,7 +20,6 @@ export default {
 
   translation: {
     common: {
-      aboutPlanka: 'Tietoa PLANKAsta',
       account: 'Tili',
       actions: 'Toiminnot',
       activateUser_title: 'Aktivoi käyttäjä',
@@ -226,8 +225,6 @@ export default {
       organization: 'Organisaatio',
       others: 'Muut',
       phone: 'Puhelin',
-      plankaUsesAppriseToSendNotificationsToOver100PopularServices:
-        'PLANKA käyttää <1><0>Apprise</0></1> lähettääkseen ilmoituksia yli 100 suosittuun palveluun.',
       preferences: 'Asetukset',
       pressPasteShortcutToAddAttachmentFromClipboard:
         'Vinkki: paina Ctrl-V (tai Cmd-V Macilla) lisätäksesi liitteen leikepöydältä.',

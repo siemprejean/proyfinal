@@ -20,7 +20,6 @@ export default {
 
   translation: {
     common: {
-      aboutPlanka: 'Tentang PLANKA',
       account: 'Akun',
       actions: 'Tindakan',
       addAttachment_title: 'Tambah Lampiran',

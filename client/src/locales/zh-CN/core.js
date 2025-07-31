@@ -20,7 +20,6 @@ export default {
 
   translation: {
     common: {
-      aboutPlanka: '关于 PLANKA',
       accessToken: '访问令牌',
       account: '账号',
       actions: '操作',
@@ -217,8 +216,6 @@ export default {
       organization: '组织机构',
       others: '其他',
       phone: '电话',
-      plankaUsesAppriseToSendNotificationsToOver100PopularServices:
-        'PLANKA使用<1><0>Apprise</0></1>向100多个流行服务发送通知',
       preferences: '偏好',
       pressPasteShortcutToAddAttachmentFromClipboard:
         '提示: 按下 Ctrl-V (Mac: Cmd-V) 从剪切板添加附件',

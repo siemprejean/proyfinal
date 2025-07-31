@@ -11,8 +11,8 @@ services:
       - 3000:1337
     environment:
       - BASE_URL=http://localhost:3000
-      - DATABASE_URL=${DATABASE_URL}
-      - SECRET_KEY=${SECRET_KEY}
+      - DATABASE_URL=postgres://planka:12345@postgres:5432/planka
+      - SECRET_KEY=
     depends_on:
       postgres:
         condition: service_healthy
@@ -24,6 +24,8 @@ services:
       - db-data:/var/lib/postgresql/data
     environment:
       - POSTGRES_DB=planka
+      - POSTGRES_USER=planka
+      - POSTGRES_PASSWORD=12345
       - POSTGRES_HOST_AUTH_METHOD=trust
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres -d planka"]

@@ -10,9 +10,10 @@ services:
     ports:
       - 3000:1337
     environment:
-      - BASE_URL=http://localhost:3000
+      - BASE_URL=http://192.168.1.118:3000
       - DATABASE_URL=postgres://planka:12345@postgres:5432/planka
-      - SECRET_KEY=
+      - SECRET_KEY=}ML\VAB&NS>#.?,9a>kPL{EVJBW,+'.m
+      - ONLY_ALLOW_ORIGINS=http://localhost:3000,http://192.168.1.118:3000
     depends_on:
       postgres:
         condition: service_healthy
